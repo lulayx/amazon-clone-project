@@ -23,7 +23,7 @@ function Payment() {
     return item.price * item.amount + amount;
   }, 0);
 
-  const stripe = useStripe();f
+  const stripe = useStripe();
   const elements = useElements();
   const navigate = useNavigate();
 
@@ -61,12 +61,13 @@ function Payment() {
       dispatch({
         type: Type.EMPTY_BASKET,
       });
-      // console.log(confirmation)
+      console.log(confirmation)
       setProcessing(false);
       navigate("/orders", { state: { msg: "You have placed A new order" } });
     } catch (error) {
       console.log("error ####", error);
       setProcessing(false);
+         navigate("/orders", { state: { msg: "You have placed A new order" } });
     }
   };
 
