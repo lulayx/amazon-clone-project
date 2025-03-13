@@ -1,7 +1,7 @@
 import React from "react";
 import { CategoryInfos} from "./CategoryFullInfos";
 import classes from "./category.module.css";
-import CategoryCard from "./categoryCard";
+import CategoryCard from "./CategoryCard"
 
 function Category() {// we use props method to pass the catagories. First, impport categoryInfos data, then we map out with call back method to access the categoryCard info data.
   return (
